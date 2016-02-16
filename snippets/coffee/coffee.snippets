@@ -78,9 +78,20 @@ snippet swi
 		when ${2:value}
 			${0:# body...}
 
-# Log
-snippet log
-	console.log ${0}
+# Debugging
+snippet de
+	debugger
+# console.log
+snippet cl
+	console.log(${0})
+# console.log
+snippet clj
+	console.log(JSON.stringify(${0}, undefined, 2))
+# console.log 2 line
+snippet clj2
+	console.log('${1:expr}')
+	console.log(JSON.stringify($1, undefined, 2))
+
 # Try __ Catch
 snippet try
 	try
